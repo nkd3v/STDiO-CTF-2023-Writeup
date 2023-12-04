@@ -3,6 +3,7 @@
 ### Description
 
 **Solve**: 6/242
+
 **Score**: 90
 
 In the shadowed realm of Cyberton, a legendary Python jail known as "AlphanoNumera" stands, renowned for its unique security mechanism. Crafted by the enigmatic mastermind, Cipheron, this digital fortress allows bash commands—but with a twist. No alphanumeric characters are permitted within its virtual walls.
@@ -113,23 +114,3 @@ $ select * from flag;
 ```
 
 And just like that, we get the flag `STDIO23_21{810fc25e2373f4669ba5cc28eeec2c93}`
-
-```
-stty -icanon; nc localhost 1337
-```
-
-```
-$ cat /home/ctf/flag.txt
-The flag is in a locally hosted postgresql database.
-
-Database: flag
-Username: ctf
-Password: d2614ed6f67a6efa581f0dff855fd573
-$ psql -h 127.0.0.1 -U ctf -d flag
-Password for user ctf: $ d2614ed6f67a6efa581f0dff855fd573
-
-$ select * from flag;
-                     flag                     
-----------------------------------------------
- STDIO23_22{d057108afbbf624d8e92c6a3f0900883}
-```

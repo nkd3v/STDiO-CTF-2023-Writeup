@@ -3,6 +3,7 @@
 ### Description
 
 **Solve**: 13/242
+
 **Score**: 76
 
 Wanna be the winner? Solve this.
